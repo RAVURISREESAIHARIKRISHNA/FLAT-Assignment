@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pragyagui.MainController">
+   <children>
+      <Label layoutX="17.0" layoutY="4.0" prefHeight="42.0" prefWidth="427.0" text="Number Counting Game" textFill="#190cd7">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="70.0" prefHeight="35.0" prefWidth="87.0" text="Magic Number" />
+      <Label fx:id="magicnumframe" layoutX="144.0" layoutY="70.0" prefHeight="35.0" prefWidth="87.0" textFill="#4e03e4" />
+      <JFXTextField fx:id="answer" focusColor="#ff6200" labelFloat="true" layoutX="120.0" layoutY="190.0" promptText="Answer" />
+      <Label layoutX="17.0" layoutY="185.0" prefHeight="35.0" prefWidth="87.0" text="Answer" />
+      <Label fx:id="answerframe" layoutX="336.0" layoutY="198.0" prefHeight="35.0" prefWidth="87.0" textFill="#00ff26" />
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="202.0" layoutY="260.0" onAction="#validateAnswer" prefHeight="42.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: #15b9c6;" text="Submit" textFill="WHITE" />
+      <Label fx:id="magicnumframe1" layoutX="29.0" layoutY="113.0" prefHeight="35.0" prefWidth="322.0" textFill="#4e03e4" />
+      <JFXButton fx:id="submit1" buttonType="RAISED" layoutX="327.0" layoutY="260.0" onAction="#newGame" prefHeight="42.0" prefWidth="106.0" ripplerFill="WHITE" style="-fx-background-color: #15b9c6;" text="New Game" textFill="WHITE" />
+   </children>
+</AnchorPane>
